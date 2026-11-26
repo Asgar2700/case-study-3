@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attendance / Exam Eligibility Checker</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Attendance / Exam Eligibility Checker</h1>
+
+    <p>
+        <small>
+            Demo thresholds only – replace with official university rules.
+        </small>
+    </p>
+
+    <!-- Student Input Form -->
+    <div class="row">
+
+        <input id="name" type="text" placeholder="Student name">
+
+        <input id="roll" type="text" placeholder="Roll number">
+
+        <input id="att" type="number" placeholder="Attendance %">
+
+        <input id="marks" type="number" placeholder="Academic score">
+
+        <select id="exam">
+            <option>Minor-1</option>
+            <option>Minor-2</option>
+            <option>Endterm</option>
+        </select>
+
+        <button id="add">Check & Add</button>
+
+    </div>
+
+    <!-- Error Message -->
+    <div id="err"></div>
+
+    <!-- Eligibility Results Table -->
+    <table>
+
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Attendance</th>
+                <th>Score</th>
+                <th>Exam</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody id="out">
+        </tbody>
+
+    </table>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
