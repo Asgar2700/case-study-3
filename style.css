@@ -1,0 +1,94 @@
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+/* Heading */
+h1 {
+    color: #1f3a5f;
+}
+
+/* Input Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Input Fields and Dropdown */
+input,
+select,
+button {
+    padding: 8px;
+}
+
+/* Button Styling */
+button {
+    background: #1f3a5f;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #294f7a;
+}
+
+/* Error Message */
+#err {
+    color: #c0392b;
+    min-height: 1.2em;
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 14px;
+}
+
+th,
+td {
+    border: 1px solid #bbb;
+    padding: 7px;
+    text-align: center;
+}
+
+/* Table Heading */
+th {
+    background: #eaf2f8;
+}
+
+/* Eligible Status */
+.ok {
+    color: #1e8449;
+    font-weight: bold;
+}
+
+/* Not Eligible Status */
+.no {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+/* Responsive Table */
+@media (max-width: 600px) {
+    body {
+        padding: 0 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 5px 3px;
+    }
+}
